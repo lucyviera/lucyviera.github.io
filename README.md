@@ -1,4 +1,5 @@
-- 👋 Hi, I’m @lucyviera
+👋 Hi, I’m @lucyviera
+Welcome to my profile! 
 
 
 <!---
