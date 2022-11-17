@@ -1,3 +1,5 @@
+<style> "color:#FF0000 
+font-size:25px </style>
 👋 Hi, I’m @lucyviera <br>
 Welcome to my profile! 
 
