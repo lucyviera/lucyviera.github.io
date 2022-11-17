@@ -1,6 +1,6 @@
 
-👋 Hi, I’m @lucyviera <br>
-Welcome to my profile! 
+<h1 align="center"> 👋 Hi, I’m @lucyviera <br>
+Welcome to my profile! </h1>
 
 
 <!---
