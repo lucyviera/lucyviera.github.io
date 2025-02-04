@@ -1,0 +1,118 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    background: radial-gradient(circle, rgba(45,3,59,1) 0%, rgba(106,13,173,1) 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-top: -10px;
+    max-width: 500px;
+}
+
+/* Contenedor de enlaces */
+.links {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 500px; /* Alineado al párrafo */
+}
+
+
+/* Links sociales */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;  /* Ensures all links take up the same width */
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    font-size: 1.3rem;
+    gap: 10px; /* Adds space between the icon and the text */
+}
+
+.social-links a:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+/* Alineación de los iconos */
+.social-links a i {
+    font-size: 1.6rem; /* Ensures icons are the same size */
+}
+/* Iconos de contacto */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.contact-links a {
+    font-size: 2rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.contact-links a:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos del footer de copyright */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem; /* Reducido aún más */
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5px 0; /* Ajustado el espacio */
+    font-weight: 300;
+    line-height: 1.2; /* Asegura que el texto no quede muy comprimido */
+    margin: 0; /* Elimina cualquier margen extra */
+}
+footer p {
+    margin: 0; /* Elimina el margen superior e inferior */
+}
