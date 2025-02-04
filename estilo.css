@@ -3,11 +3,10 @@
 
 body {
     font-family: "Signika", serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "GRAD" 0;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings: "GRAD" 0;
     text-align: center;
     background: radial-gradient(circle, rgba(45,3,59,1) 0%, rgba(106,13,173,1) 100%);
     margin: 0;
@@ -47,9 +46,8 @@ p {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    max-width: 500px; /* Alineado al párrafo */
+    max-width: 500px;
 }
-
 
 /* Links sociales */
 .social-links {
@@ -65,7 +63,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;  /* Ensures all links take up the same width */
+    width: 100%;
     padding: 15px 20px;
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
@@ -75,7 +73,7 @@ p {
     transition: all 0.3s ease;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
     font-size: 1.3rem;
-    gap: 10px; /* Adds space between the icon and the text */
+    gap: 10px;
 }
 
 .social-links a:hover {
@@ -85,8 +83,9 @@ p {
 
 /* Alineación de los iconos */
 .social-links a i {
-    font-size: 1.6rem; /* Ensures icons are the same size */
+    font-size: 1.6rem;
 }
+
 /* Iconos de contacto */
 .contact-links {
     display: flex;
@@ -111,13 +110,65 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    font-size: 0.5rem; /* Reducido aún más */
+    font-size: 0.5rem;
     color: rgba(255, 255, 255, 0.5);
-    padding: 5px 0; /* Ajustado el espacio */
+    padding: 5px 0;
     font-weight: 300;
-    line-height: 1.2; /* Asegura que el texto no quede muy comprimido */
-    margin: 0; /* Elimina cualquier margen extra */
+    line-height: 1.2;
+    margin: 0;
 }
-footer p {
-    margin: 0; /* Elimina el margen superior e inferior */
+
+footer h2 {
+    margin: 0;
+}
+
+/* Medias Queries para Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        max-width: 400px;
+    }
+
+    .social-links a {
+        font-size: 1.1rem;
+        padding: 12px 15px;
+        max-width: 90%; /* Adjusts the width for smaller screens */
+    }
+
+    .contact-links a {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        max-width: 350px;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+        padding: 10px 12px;
+        max-width: 90%; /* Adjusts the width for smaller screens */
+    }
+
+    .contact-links a {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        font-size: 0.6rem;
+    }
 }
