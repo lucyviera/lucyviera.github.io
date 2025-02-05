@@ -18,6 +18,7 @@ body {
     height: 100vh;
     color: #fff;
     animation: fadeIn 1s ease-in;
+    padding-bottom: 60px; /* Ajustamos el espacio inferior sin exagerar */
 }
 
 
@@ -167,7 +168,6 @@ footer h2 {
         margin-left: 10px;  /* Centrada sin desplazamiento */
         margin-top: 60px;  /* Más espacio en la parte superior para separar de texto */
         margin-bottom: 40px;  /* Más espacio debajo de la firma en versión responsiva */
-        padding-bottom: 60px; /* Ajustamos el espacio inferior sin exagerar */
     }
 }
 
@@ -203,4 +203,36 @@ footer h2 {
         margin-top: 70px;
         margin-bottom: 50px;
     }
+}
+
+/* pagina home*/
+.mantenimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+   
+}
+
+.mantenimiento h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.mantenimiento p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px 0;
+    margin-top: 20px;
 }
