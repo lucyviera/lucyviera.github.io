@@ -104,28 +104,29 @@ p {
 .contact-links {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-top: 30px;
+    gap: 25px;  /* Ajustamos el espacio entre los enlaces de manera más moderada */
+    margin-top: 30px;  /* Espacio más moderado en la parte superior */
+    margin-bottom: 20px;  /* Un margen inferior más pequeño */
 }
 
 .contact-links a {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Aumentamos un poco el tamaño de los iconos */
     color: #fff;
     transition: transform 0.3s ease;
 }
 
 .contact-links a:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);  /* Un efecto de hover más sutil */
 }
 
 /* Footer*/
 footer {
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.6rem; /* Aumentamos ligeramente el tamaño de la fuente */
     color: rgba(255, 255, 255, 0.5);
-    padding: 5px 0;
+    padding: 10px 0;  /* Un padding más moderado */
     font-weight: 300;
-    line-height: 1.2;
+    line-height: 1.3; /* Un poquito más de espacio entre las líneas */
     margin: 0;
 }
 
@@ -163,7 +164,7 @@ footer h2 {
         background-image: url('img/firma2.svg');
         height: 180px;  /* Ajustamos la altura para que no ocupe demasiado espacio */
         max-width: 500px; /* tamaño adecuado */
-        margin-left: 0;  /* Centrada sin desplazamiento */
+        margin-left: 10px;  /* Centrada sin desplazamiento */
         margin-top: 60px;  /* Más espacio en la parte superior para separar de texto */
         margin-bottom: 40px;  /* Más espacio debajo de la firma en versión responsiva */
     }
@@ -197,7 +198,7 @@ footer h2 {
         background-image: url('img/firma2.svg');
         height: 150px; 
         max-width: 400px;
-        margin-left: 0;
+        margin-left: 10px;
         margin-top: 70px;
         margin-bottom: 50px;
     }
