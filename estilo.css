@@ -167,6 +167,7 @@ footer h2 {
         margin-left: 10px;  /* Centrada sin desplazamiento */
         margin-top: 60px;  /* Más espacio en la parte superior para separar de texto */
         margin-bottom: 40px;  /* Más espacio debajo de la firma en versión responsiva */
+        padding-bottom: 60px; /* Ajustamos el espacio inferior sin exagerar */
     }
 }
 
