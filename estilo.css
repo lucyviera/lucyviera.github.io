@@ -20,6 +20,20 @@ body {
     animation: fadeIn 1s ease-in;
 }
 
+
+/*para cambiar la imagen*/
+.firma {
+    width: 100%;
+    max-width: 550px;  /* Alineado con el contenedor de los social-links*/
+    height: 200px;
+    background-image: url('img/firma1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    padding: 50px;
+}
+
 /* Animación de entrada */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(-20px); }
@@ -104,7 +118,7 @@ p {
     transform: scale(1.2);
 }
 
-/* Estilos del footer de copyright */
+/* Footer*/
 footer {
     position: fixed;
     bottom: 0;
@@ -122,7 +136,7 @@ footer h2 {
     margin: 0;
 }
 
-/* Medias Queries para Responsividad */
+/* Medias Queries para versiones responsivas*/
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
@@ -136,7 +150,7 @@ footer h2 {
     .social-links a {
         font-size: 1.1rem;
         padding: 12px 15px;
-        max-width: 90%; /* Adjusts the width for smaller screens */
+        max-width: 90%; 
     }
 
     .contact-links a {
@@ -145,6 +159,15 @@ footer h2 {
 
     footer {
         font-size: 0.7rem;
+    }
+     /* Cambiar la imagen con background en la versión responsiva */
+     .firma {
+        background-image: url('img/firma2.svg');
+        height: 180px;  /* Ajustamos la altura para que no ocupe demasiado espacio */
+        max-width: 500px; /* tamaño adecuado */
+        margin-left: 0;  /* Centrada sin desplazamiento */
+        margin-top: 60px;  /* Más espacio en la parte superior para separar de texto */
+        margin-bottom: 40px;  /* Más espacio debajo de la firma en versión responsiva */
     }
 }
 
@@ -161,7 +184,7 @@ footer h2 {
     .social-links a {
         font-size: 1rem;
         padding: 10px 12px;
-        max-width: 90%; /* Adjusts the width for smaller screens */
+        max-width: 90%;
     }
 
     .contact-links a {
@@ -170,5 +193,14 @@ footer h2 {
 
     footer {
         font-size: 0.6rem;
+    }
+
+     .firma {
+        background-image: url('img/firma2.svg');
+        height: 150px; 
+        max-width: 400px;
+        margin-left: 0;
+        margin-top: 70px;
+        margin-bottom: 50px;
     }
 }
