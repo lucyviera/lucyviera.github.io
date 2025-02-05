@@ -120,9 +120,6 @@ p {
 
 /* Footer*/
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     text-align: center;
     font-size: 0.5rem;
     color: rgba(255, 255, 255, 0.5);
@@ -160,6 +157,7 @@ footer h2 {
     footer {
         font-size: 0.7rem;
     }
+
      /* Cambiar la imagen con background en la versión responsiva */
      .firma {
         background-image: url('img/firma2.svg');
