@@ -204,35 +204,36 @@ footer h2 {
     }
 }
 
-/* pagina home
-*/
-/* Importar fuente */
-@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
 
-
-
-/* Fondo con partículas animadas */
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+/* home*/
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 80%; /* Limita el ancho */
+    margin: 0 auto; /* Centrar */   
 }
 
-/* Firma (nombre como imagen) */
+/* Firma animada */
 .firma.animada {
     width: 100%;
-    max-width: 550px;
-    height: 200px;
+    max-width: 450px;
+    height: 180px;
     background-image: url('img/firma1.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     animation: floatAnimation 3s infinite ease-in-out;
+    margin: 30px 0; /* Más aire arriba y abajo */
+    top: 20px;
 }
 
-/* Animación flotante para la firma */
+/* Animación flotante */
 @keyframes floatAnimation {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-5px); }
@@ -240,38 +241,47 @@ footer h2 {
 }
 
 /* Texto de mantenimiento */
-.mantenimiento {
+.mantenimiento-texto {
     font-size: 2rem;
     font-weight: 600;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transform: translateY(10px);
     animation: fadeIn 1.5s ease-in-out forwards;
+    max-width: 70%; /* Evita que el texto se expanda demasiado */
+    line-height: 1.4; /* Mejora la legibilidad */
 }
+/* Imagen de mantenimiento más pequeña */
+.container img {
+    max-width: 50%;
+    height: auto;
+    margin: 15px 0;
+}
+
 
 /* Botón para volver atrás */
 .volver {
-    margin-top: 30px;
+    margin-top: 30px; /* Más separación */
 }
 
 .volver a {
     display: inline-block;
-    padding: 12px 20px;
-    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 18px;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     border-radius: 20px;
     transition: all 0.3s ease;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
     opacity: 0;
     transform: translateY(10px);
     animation: fadeIn 1s ease-in-out forwards 0.3s;
 }
 
 .volver a:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 1);
     transform: scale(1.05);
 }
 
@@ -283,27 +293,16 @@ footer h2 {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .mantenimiento {
+    .mantenimiento-texto {
         font-size: 1.5rem;
     }
 
     .firma.animada {
-        height: 180px;
-    }
-
-    .volver a {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .mantenimiento {
-        font-size: 1.2rem;
-    }
-
-    .firma.animada {
         height: 150px;
+    }
+
+    .container img {
+        max-width: 50%;
     }
 
     .volver a {
@@ -311,33 +310,22 @@ footer h2 {
         padding: 8px 12px;
     }
 }
-#particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}.menu a {
-    opacity: 0;
-    transform: translateY(10px);
-    animation: fadeInLinks 0.8s ease-out forwards;
-}
 
-.menu a:nth-child(1) { animation-delay: 0.2s; }
-.menu a:nth-child(2) { animation-delay: 0.4s; }
-.menu a:nth-child(3) { animation-delay: 0.6s; }
-.menu a:nth-child(4) { animation-delay: 0.8s; }
+@media (max-width: 480px) {
+    .mantenimiento-texto {
+        font-size: 1.2rem;
+    }
 
-@keyframes fadeInLinks {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-.firma.animada {
-    transform: translateY(0px);
-    animation: floatAnimation 3s infinite ease-in-out;
-}
+    .firma.animada {
+        height: 130px;
+    }
 
-@keyframes floatAnimation {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-5px); }
-    100% { transform: translateY(0px); }
+    .container img {
+        max-width: 40%;
+    }
+
+    .volver a {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
 }
